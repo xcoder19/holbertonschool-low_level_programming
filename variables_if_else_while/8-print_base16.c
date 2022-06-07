@@ -11,7 +11,7 @@ for (i = '0'; i <= '9'; i++)
 {
 putchar(i);
 };
-for (v = 'a'; i <= 'f'; i++)
+for (v = 'a'; v <= 'f'; v++)
 {
 putchar(v);
 }
