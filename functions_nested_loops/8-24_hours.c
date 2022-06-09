@@ -17,6 +17,7 @@ for (i = 0; i <= 23; i++)
 for (k = 0; i <= 59; k++)
 {
 putchar('0' + i);
+putchar(':');
 putchar('0' + k);
 }
 }
