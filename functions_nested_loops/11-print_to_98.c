@@ -14,12 +14,14 @@ if (n > 98)
 while (n > 98)
 {
 n = n - 1;
-printf("%d", ',', n);
+printf("%d", n);
+putchar(',');
 }
 }
 while (n < 98)
 {
 n = n + 1;
-printf("%d", ',', n);
+printf("%d", n);
+putchar(',');
 }
 }
