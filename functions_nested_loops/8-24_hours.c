@@ -3,7 +3,6 @@
 #include <stdlib.h>
 /**
  * jack_bauer - prints hours
-
  * Return: On success the last digit of a number.
  */
 
@@ -22,5 +21,6 @@ _putchar('0' + i);
 _putchar(':');
 _putchar('0' + k);
 }
+_putchar('\n');
 }
 }
