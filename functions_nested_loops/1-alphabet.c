@@ -13,7 +13,7 @@ return (0);
 /**
  * print_alphabet - print alphabet
  */
-void print_alphabet(void)
+print_alphabet()
 {
 char i;
 for (i = 'a'; i <= 'z'; i++)
