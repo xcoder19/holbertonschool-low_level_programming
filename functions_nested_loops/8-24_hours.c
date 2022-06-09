@@ -16,11 +16,12 @@ for (i = 0; i <= 23; i++)
 for (k = 0; i <= 59; k++)
 {
 
-_putchar('0');
-_putchar('0' + i);
+_putchar('0' + i / 10);
+_putchar('0' + i % 10);
 _putchar(':');
-_putchar('0' + k);
-}
+_putchar('0' + k / 10);
+_putchar('0' + k % 10);
 _putchar('\n');
+}
 }
 }
