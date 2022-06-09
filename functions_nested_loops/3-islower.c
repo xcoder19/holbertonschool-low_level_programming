@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * islower - print alphabet
+ * _islower - print alphabet
  * @c: the character to print
  * Return: On success 1.
  */
