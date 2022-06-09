@@ -21,7 +21,6 @@ putchar(' ');
 }
 n = n - 1;
 }
-putchar('\n');
 }
 else
 {
