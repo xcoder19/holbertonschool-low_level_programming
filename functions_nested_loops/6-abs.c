@@ -3,7 +3,7 @@
 /**
  * _abs - checks
  * @i: integer
- * Return: On success int.
+ * Return: On success the absolute value of i.
  */
 
 int _abs(int i)
