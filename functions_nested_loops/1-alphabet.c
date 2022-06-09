@@ -1,14 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-/**
- * main - execution
- * Return: 0
- */
-int main(void)
-{
-print_alphabet();
-return (0);
-}
+
 /**
  * print_alphabet - print alphabet
  */
