@@ -23,6 +23,8 @@ putchar(' ');
 n = n - 1;
 }
 }
+else
+{
 while (n <= 98)
 {
 printf("%d", n);
@@ -32,5 +34,7 @@ putchar(',');
 putchar(' ');
 }
 n = n + 1;
+}
+_putchar('\n');
 }
 }
