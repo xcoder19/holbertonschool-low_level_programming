@@ -23,7 +23,7 @@ putchar(' ');
 n = n - 1;
 }
 }
-while (n < 98)
+while (n <= 98)
 {
 printf("%d", n);
 if (n != 98)
