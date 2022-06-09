@@ -9,7 +9,7 @@
 
 void print_to_98(int n)
 {
-_putchar('0' + n);
+printf("%d", n);
 /*
 if (n > 98)
 {
