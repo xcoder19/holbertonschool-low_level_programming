@@ -14,10 +14,12 @@ while (n > 98)
 {
 n = n - 1;
 _putchar('0' + n);
+_putchar(',');
 }
 while (n < 98)
 {
 n = n + 1;
 _putchar('0' + n);
+_putchar(',');
 }
 }
