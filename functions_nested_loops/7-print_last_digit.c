@@ -6,4 +6,9 @@
  * Return: On success the last digit of a number.
  */
 
-int print_last_digit(int i) { return (i % 10); }
+int print_last_digit(int i)
+{
+char r = i % 10;
+_putchar(r);
+return (r);
+}
