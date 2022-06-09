@@ -36,5 +36,5 @@ putchar(' ');
 n = n + 1;
 }
 }
-_putchar('\n');
+putchar('\n');
 }
