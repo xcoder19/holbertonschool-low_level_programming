@@ -15,21 +15,21 @@ if (n <= 98)
 {
 for (k = n; k <= 98; k++)
 {
-return (k);
+_putchar('0' + k);
 }
 }
 else if (n < 0)
 {
 for (k = n; k <= 98; k++)
 {
-return (k);
+_putchar('0' + k);
 }
 }
 else
 {
 for (k = n; k >= 98; k++)
 {
-return (k);
+_putchar('0' + k);
 }
 }
 }
