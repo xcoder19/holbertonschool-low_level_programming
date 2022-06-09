@@ -18,6 +18,7 @@ printf("%d", n);
 if (n != 98)
 {
 putchar(',');
+putchar(' ');
 }
 }
 }
@@ -28,6 +29,7 @@ printf("%d", n);
 if (n != 98)
 {
 putchar(',');
+putchar(' ');
 }
 }
 }
