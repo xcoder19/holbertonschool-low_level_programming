@@ -8,4 +8,4 @@
  * Return: On success the sum.
  */
 
-int add(int i, int k) { return (i + i); }
+int add(int i, int k) { return (i + k); }
