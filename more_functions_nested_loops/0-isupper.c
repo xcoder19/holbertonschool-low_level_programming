@@ -1,7 +1,10 @@
 
 #include "main.h"
 #include <stdio.h>
-
+/*
+ * _isupper - checking if c is upper
+ * Return : 1 if c is positive
+ */
 int _isupper(int c)
 {
 
