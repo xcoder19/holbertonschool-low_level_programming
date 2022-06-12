@@ -28,7 +28,10 @@ else
 {
 printf("%d", i);
 }
+if (i > 1)
+{
 putchar(' ');
+}
 }
 
 return (0);
