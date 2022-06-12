@@ -19,12 +19,13 @@ else
 
 for (i = 0; i <= size; i++)
 {
-_putchar(' ');
+
 for (k = 0; k <= size; k++)
 {
-_putchar('\n');
+_putchar(' ');
 putchar('#');
 }
 }
+_putchar('\n');
 }
 }
