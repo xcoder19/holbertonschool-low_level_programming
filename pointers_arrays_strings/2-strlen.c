@@ -2,10 +2,9 @@
 
 #include "main.h"
 /**
- * int _strlen(char *s) - swapingint
+ * _strlen(char *s) - swapingint
  * @s: pointer to the first char of a string
  * Return: length of string
-
  */
 int _strlen(char *s)
 {
