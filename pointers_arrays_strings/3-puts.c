@@ -9,7 +9,7 @@ void _puts(char *str)
 {
 int i;
 
-unsigned long n;
+int n;
 n = strlen(str);
 char k[n];
 for (i = 0; i <= n; i++)
