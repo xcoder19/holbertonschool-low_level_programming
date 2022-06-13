@@ -2,7 +2,7 @@
 
 #include "main.h"
 /**
- * _strlen(char *s) - swapingint
+ * _strlen - swapingint
  * @s: pointer to the first char of a string
  * Return: length of string
  */
