@@ -2,6 +2,7 @@
 /**
  * _strlen - counts
  * @s: pointer char
+ * Return: integer
  */
 
 int _strlen(char *s)
@@ -23,7 +24,6 @@ int len, n, i, j;
 len = _strlen(str);
 if (len == 0)
 {
-
 putchar('\n');
 }
 if (len % 2 != 2 && len != 0)
@@ -34,6 +34,7 @@ for (i = n + 1; i != len; i++)
 {
 putchar(str[i]);
 }
+putchar('\n');
 }
 
 else if (len != 0)
@@ -42,7 +43,6 @@ for (j = len / 2; j != len - 1; j++)
 {
 putchar(str[j]);
 }
-}
-
 putchar('\n');
+}
 }
