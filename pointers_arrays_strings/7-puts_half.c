@@ -22,9 +22,9 @@ for (i = n + 1; i != len; i++)
 putchar(str[i]);
 }
 }
-else if (str[0] == ' ')
+else if (str[0] == '\0')
 {
-putchar(' ');
+putchar('\n');
 }
 else
 {
