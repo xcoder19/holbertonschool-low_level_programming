@@ -17,7 +17,7 @@ if (len % 2 != 2)
 {
 n = (len - 1) / 2;
 
-for (i = n; i != len - 1; i++)
+for (i = n; i != len; i++)
 {
 putchar(str[i]);
 }
