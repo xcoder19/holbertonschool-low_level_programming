@@ -14,7 +14,7 @@ while (s[i])
 {
 i++;
 }
-k = i - 2;
+k = i - 1;
 
 while (k >= 0)
 {
