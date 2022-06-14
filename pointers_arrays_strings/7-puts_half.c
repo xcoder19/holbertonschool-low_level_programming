@@ -10,7 +10,7 @@ return (i);
 void puts_half(char *str)
 {
 
-int len, n, i;
+int len, n, i, j;
 len = _strlen(str);
 
 if (len % 2 != 2)
@@ -24,9 +24,9 @@ putchar(str[i]);
 }
 else
 {
-for (i = len / 2; i >= len; i++)
+for (j = len / 2; j >= len; j++)
 {
-putchar(str[i]);
+putchar(str[j]);
 }
 }
 putchar('\n');
