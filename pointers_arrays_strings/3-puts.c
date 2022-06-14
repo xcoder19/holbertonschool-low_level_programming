@@ -1,15 +1,15 @@
 
 #include "main.h"
-#include <string.h>
+
 /**
- * _puts
+ * _puts - put function
  * @str: pointer to str
  */
 void _puts(char *str)
 {
 int i;
 i = 0;
-while (str[i] != '\0')
+while (str[i])
 {
 putchar(str[i]);
 i++;
