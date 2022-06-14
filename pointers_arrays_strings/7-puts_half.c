@@ -22,6 +22,10 @@ for (i = n + 1; i != len; i++)
 putchar(str[i]);
 }
 }
+else if (str[0] == ' ')
+{
+putchar(' ');
+}
 else
 {
 for (j = (len - 1) / 2; j != len - 1; j++)
@@ -29,5 +33,6 @@ for (j = (len - 1) / 2; j != len - 1; j++)
 putchar(str[j]);
 }
 }
+
 putchar('\n');
 }
