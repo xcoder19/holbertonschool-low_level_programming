@@ -8,14 +8,10 @@
 void _puts(char *str)
 {
 int i;
-
-int n;
-n = strlen(str);
-char k[n];
-for (i = 0; i <= n; i++)
+i = 0;
+while (str[i] != '\0')
 {
-k[i] = *(str + i);
+putchar(str[i]);
 }
-
-fprintf(stdout, k);
+i++;
 }
