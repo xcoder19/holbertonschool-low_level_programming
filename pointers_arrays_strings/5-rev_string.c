@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * rev_string - reversing
  * @s: pointer to a string
