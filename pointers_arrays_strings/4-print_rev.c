@@ -18,8 +18,8 @@ k = i - 1;
 
 while (k >= 0)
 {
-
 putchar(s[k]);
 k--;
 }
+putchar('\n');
 }
