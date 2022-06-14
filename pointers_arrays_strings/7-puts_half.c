@@ -24,7 +24,7 @@ putchar(str[i]);
 }
 else
 {
-for (j = len / 2; j >= len; j++)
+for (j = len / 2; j != len; j++)
 {
 putchar(str[j]);
 }
