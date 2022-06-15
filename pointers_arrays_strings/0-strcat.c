@@ -7,7 +7,6 @@
  * @dest: pointer char
  * @src: pointer char
  *
-
  */
 char *_strcat(char *dest, char *src)
 {
@@ -21,5 +20,5 @@ char *_strcat(char *dest, char *src)
 
 	*ptr = '\0';
 
-	return dest;
+	return (dest);
 }
