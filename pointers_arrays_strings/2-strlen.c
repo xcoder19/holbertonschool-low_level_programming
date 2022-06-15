@@ -1,5 +1,3 @@
-
-
 #include "main.h"
 /**
  * _strlen - counting
