@@ -5,6 +5,7 @@
  * *_strcpy - copy string
  * @dest: pointer char
  * @src: pointer char
+ * Return: dest pointer
  */
 
 char *_strcpy(char *dest, char *src)
@@ -19,5 +20,5 @@ dest++;
 
 *dest = '\0';
 
-return p;
+return (p);
 }
