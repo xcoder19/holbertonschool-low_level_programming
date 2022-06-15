@@ -1,5 +1,6 @@
 
 #include "main.h"
+#include <string.h>
 /**
  * _strcat - concat 2 string
  * Return: pointer to a char
