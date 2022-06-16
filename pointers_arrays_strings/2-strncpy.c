@@ -15,7 +15,7 @@ char *_strncpy(char *dest, char *src, int n)
 	int i;
 
 	char *ptr = dest;
-
+	char *ptr2 = src;
 	while (*src != '\0' && n-- && ++i)
 
 	{
@@ -25,7 +25,7 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 	}
 
-	if (strlen(dest) != 0)
+	if (strlen(ptr2) != 0)
 	{
 		for (; i < n; i++)
 		{
