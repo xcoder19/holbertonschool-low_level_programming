@@ -29,7 +29,8 @@ char *_memset(char *s, char b, unsigned int n)
 	char *p = s;
 	while (n--)
 	{
-		_strcat(s, &b);
+		*s = b;
+		s++;
 	}
 	return (p);
 }
