@@ -1,5 +1,10 @@
 
 #include "main.h"
+/**
+ * _strlen - counting
+ * @s: pointer to the first char of a string
+ * Return: length of string
+ */
 int _strlen(char *s)
 {
 	int i;
@@ -8,9 +13,16 @@ int _strlen(char *s)
 
 	return (i);
 }
+/**
+ * _strspn - strspn function
+ * @s: pointer to the first char of a string
+ * @accept: pointer char
+ * Return: i
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
+
 	int k, j;
 
 	for (j = 0; j <= _strlen(s) - 1; j++)
