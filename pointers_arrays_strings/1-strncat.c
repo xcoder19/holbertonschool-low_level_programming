@@ -9,5 +9,14 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	strncat(dest, src, n);
+	char *p = dest + strlen(dest);
+
+	while (*src != '\0' && n--)
+	{
+		*p++ = *src++;
+	}
+
+	*p = '\0';
+
+	return dest;
 }
