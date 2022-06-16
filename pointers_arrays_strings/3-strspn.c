@@ -10,7 +10,7 @@ int _strlen(char *s)
 }
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	int k, j;
 
 	for (j = 0; j <= _strlen(s) - 1; j++)
