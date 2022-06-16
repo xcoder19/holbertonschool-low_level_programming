@@ -1,6 +1,7 @@
 
 
 #include "main.h"
+#include <string.h>
 /**
  * _strncpy - strncpy function
  * @dest: pointer to char
