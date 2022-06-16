@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+
 /**
  * _strncat - strncat function
  * @dest: pointer to char
