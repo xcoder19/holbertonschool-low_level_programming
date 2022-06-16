@@ -23,7 +23,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest++;
 		src++;
 	}
-	if (*ptr1 != "")
+	if (*ptr1)
 	{
 		for (; i < n; i++)
 		{
