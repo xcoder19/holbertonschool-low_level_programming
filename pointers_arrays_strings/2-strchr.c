@@ -1,10 +1,10 @@
 
 #include "main.h"
 /**
- * @brief
- *
- *
- *
+ * _strchr - strchr function
+ * @s: pointer to char
+ * @c : char
+ * Return: s or NULL
  */
 
 char *_strchr(char *s, char c)
