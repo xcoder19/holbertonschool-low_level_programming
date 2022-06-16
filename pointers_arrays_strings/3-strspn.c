@@ -8,6 +8,7 @@
 int _strlen(char *s)
 {
 	int i;
+
 	for (i = 0; *(s + i) != '\0'; ++i)
 		;
 
@@ -32,6 +33,10 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[j] == accept[k])
 			{
 				i++;
+			}
+			else
+			{
+				break;
 			}
 		}
 	}
