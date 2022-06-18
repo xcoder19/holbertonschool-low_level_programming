@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 int _strlen(char *s)
 {
 	int i;
@@ -35,8 +36,7 @@ char *_strstr(char *haystack, char *needle)
 
 	if (j == len)
 	{
-
-		printf("%s %s", needle, arr);
+		return strcat(needle, arr);
 		putchar('\n');
 	}
 
