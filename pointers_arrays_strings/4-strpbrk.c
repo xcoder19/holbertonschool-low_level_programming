@@ -42,8 +42,8 @@ char *_strpbrk(char *s, char *accept)
 
 	{
 
-		return s + position;
+		return (s + position);
 	}
 
-	return NULL;
+	return (NULL);
 }
