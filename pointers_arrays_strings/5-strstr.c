@@ -36,7 +36,7 @@ char *_strstr(char *haystack, char *needle)
 
 	if (j == len)
 	{
-		return strcat(needle, arr);
+		return (arr - j);
 		putchar('\n');
 	}
 
