@@ -18,26 +18,26 @@ char *_strstr(char *haystack, char *needle)
 	while (haystack[i] != '\0' && needle[j] != '\0')
 	{
 
-		if (haystack[i] == needle[i])
+		if (haystack[i] == needle[j])
 		{
+
 			i++;
 			j++;
-			arr = haystack;
+			arr = haystack + i;
 		}
+
 		else
 		{
 			j = 0;
 			i++;
 		}
 	}
-	printf("this is %d\n", j);
-	printf("this is %d\n", len);
 
 	if (j == len)
 	{
 
-		printf("%s", arr);
-		return (arr);
+		printf("%s %s", needle, arr);
+		putchar('\n');
 	}
 
 	return NULL;
