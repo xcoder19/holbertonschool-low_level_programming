@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+ * print_diagsums - print diagonal numbers
  * @a: int pointer
  * @size: size integer
  */
