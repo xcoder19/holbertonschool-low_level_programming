@@ -1,8 +1,11 @@
-int _strlen_recursion(char *s)
+#include "main.h"
 /**
+ * _strlen_recursion - strlen
  * @s: pointer to string
  * Return len of s array
  */
+int _strlen_recursion(char *s)
+
 {
 
 	if (*s)
