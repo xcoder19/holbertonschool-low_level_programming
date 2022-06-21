@@ -5,6 +5,13 @@
  * Return: 1 or 0
  */
 
+/**
+ * is_prime - prime number checker
+ * @i: int
+ * @j: int
+ * Return: 1 or 0
+ */
+
 int isprime(int i, int j)
 {
 	if (j < 2 || j % i == 0)
