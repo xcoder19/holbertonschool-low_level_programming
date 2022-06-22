@@ -10,9 +10,9 @@ int helper(int n, int i)
 {
 	if (i * i == n)
 	{
-		return i;
+		return (i);
 	}
-	return helper(n, i + 1);
+	return (helper(n, i + 1));
 }
 /**
  * _sqrt_recursion - sqrt
@@ -21,5 +21,9 @@ int helper(int n, int i)
  */
 int _sqrt_recursion(int n)
 {
+	if (n < 0)
+	{
+		return (-1);
+	}
 	return (helper(n, 1));
 }
