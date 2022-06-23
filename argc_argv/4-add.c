@@ -9,8 +9,11 @@
 int main(int argc, char **argv)
 {
 	int i, j, k, n, flag;
+
 	flag = 0;
+
 	j = 0;
+
 	k = 0;
 
 	for (i = 1; i < argc; i++)
