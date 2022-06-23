@@ -8,10 +8,32 @@
  */
 int main(int argc, char **argv)
 {
-	int i;
+	int i, j, k;
+
+	j = 0;
+
 	for (i = 0; i < argc; i++)
 	{
-		printf("%d", argv[i][0]);
+		if (atoi(argv[i]))
+		{
+			j += atoi(argv[i]);
+		}
+		else
+		{
+			k++;
+		}
 	}
-	return (0);
+	if (j = 0)
+	{
+		return (0);
+	}
+	else if (k > 0)
+	{
+		printf("Error");
+		return (1);
+	}
+	else
+	{
+		return (j);
+	}
 }
