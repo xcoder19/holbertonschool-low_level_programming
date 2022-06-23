@@ -3,9 +3,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *arr, *k;
-
-	int i;
-
+	k = NULL;
 	arr = (char *)malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
 
 	while (arr != NULL)
