@@ -8,9 +8,12 @@
  */
 int main(int argc, char **argv)
 {
-	if (argv[2])
+	if (argc != 3)
 	{
-		printf("%d", argv[1] * argv[2]);
+		int k, j;
+		k = argv[1];
+		j = argv[2];
+		printf("%d", k * j);
 		return (0);
 	}
 
