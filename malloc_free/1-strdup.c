@@ -31,6 +31,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
+		printf("failed to allocate memory\n");
 		return NULL;
 	}
 }
