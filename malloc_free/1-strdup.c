@@ -9,6 +9,7 @@
 
 char *_strdup(char *str)
 {
+
 	char *p;
 
 	unsigned long k;
@@ -17,13 +18,19 @@ char *_strdup(char *str)
 
 	k = strlen(str);
 	p = (char *)malloc(sizeof(char) * k);
-
-	i = 0;
-	while (str[i])
+	if (str)
 	{
-		p[i] = str[i];
-		i++;
-	}
+		i = 0;
+		while (str[i])
+		{
+			p[i] = str[i];
+			i++;
+		}
 
-	return p;
+		return (p);
+	}
+	else
+	{
+		return NULL;
+	}
 }
