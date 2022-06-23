@@ -4,8 +4,9 @@ char *str_concat(char *s1, char *s2)
 {
 
 	char *arr;
+	char *p;
 	arr = (char *)malloc(sizeof(char) * (strlen(s2) + strlen(s1) + 2));
-
+	p = arr;
 	while (arr != NULL)
 	{
 
@@ -16,4 +17,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		*arr++ = *s2++;
 	}
+
+	return p;
 }
