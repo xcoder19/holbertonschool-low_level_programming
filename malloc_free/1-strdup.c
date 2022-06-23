@@ -9,17 +9,17 @@
 
 char *_strdup(char *str)
 {
-
-	char *p;
-
-	unsigned long k;
-
-	int i;
-
-	k = strlen(str);
-	p = (char *)malloc(sizeof(char) * k);
-	if (str)
+	if (str != NULL)
 	{
+		char *p;
+
+		unsigned long k;
+
+		int i;
+
+		k = strlen(str);
+		p = (char *)malloc(sizeof(char) * k);
+
 		i = 0;
 		while (str[i])
 		{
