@@ -8,9 +8,9 @@
  */
 int main(int argc, char **argv)
 {
-	if (*argv)
+	if (argv[1])
 	{
-		putchar('0' + argc);
+		putchar('0' + argc - 1);
 		putchar('\n');
 		return (0);
 	}
