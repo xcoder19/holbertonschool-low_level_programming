@@ -4,6 +4,7 @@
  * str_concat - concating 2 strings
  * @s1: string
  * @s2: string
+ * Return: pointer to new string
  */
 char *str_concat(char *s1, char *s2)
 {
