@@ -11,8 +11,8 @@ int main(int argc, char **argv)
 	if (argc != 3)
 	{
 		int k, j;
-		k = argv[1];
-		j = argv[2];
+		k = argv[1] + '0';
+		j = argv[2] + '0';
 		printf("%d", k * j);
 		return (0);
 	}
