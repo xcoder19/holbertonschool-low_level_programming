@@ -15,7 +15,10 @@ int main(int argc, char **argv)
 
 		return (0);
 	}
-	printf("ERROR");
+	else
+	{
+		printf("ERROR");
 
-	return (1);
+		return (1);
+	}
 }
