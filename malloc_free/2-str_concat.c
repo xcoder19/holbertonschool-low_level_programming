@@ -1,8 +1,14 @@
 #include <string.h>
 #include "main.h"
+/**
+ * str_concat - concating 2 strings
+ * @s1: string
+ * @s2: string
+ */
 char *str_concat(char *s1, char *s2)
 {
 	char *arr, *p;
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -24,5 +30,5 @@ char *str_concat(char *s1, char *s2)
 			*arr++ = *s2++;
 		}
 	}
-	return p;
+	return (p);
 }
