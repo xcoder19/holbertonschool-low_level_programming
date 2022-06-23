@@ -2,10 +2,11 @@
 #include "main.h"
 char *str_concat(char *s1, char *s2)
 {
-
+	unsigned long k;
 	char *arr;
 	char *p;
-	arr = (char *)malloc(sizeof(char) * (strlen(s2) + strlen(s1) + 2));
+	k = strlen(s2) + strlen(s1) + 2;
+	arr = (char *)malloc(sizeof(char) * k);
 	p = arr;
 	while (arr != NULL)
 	{
