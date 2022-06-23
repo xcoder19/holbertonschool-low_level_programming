@@ -3,12 +3,16 @@
 /**
  * create_array - create array dynamicaly
  * @size: int
- * @char: character
+ * @c: character
  * Return: arr
  */
 
 char *create_array(unsigned int size, char c)
 {
+	if (!size)
+	{
+		return (NULL);
+	}
 	char *arr;
 
 	unsigned int i;
@@ -20,5 +24,5 @@ char *create_array(unsigned int size, char c)
 		arr[i] = c;
 	}
 
-	return arr;
+	return (arr);
 }
