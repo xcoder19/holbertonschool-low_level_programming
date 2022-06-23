@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 			k++;
 		}
 	}
-	if (j = 0)
+	if (j == 0)
 	{
 		return (0);
 	}
