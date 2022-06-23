@@ -13,5 +13,6 @@ int main(int argc, char **argv)
 	{
 		printf("%s", argv[argc]);
 	}
+	putchar('\n');
 	return (0);
 }
