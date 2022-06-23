@@ -6,7 +6,7 @@
  * @argv: array of values
  * Return: 0
  */
-int main(int argc, char **argv)
+int main(int argc)
 {
 
 	putchar('0' + argc);
