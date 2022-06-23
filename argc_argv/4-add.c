@@ -8,20 +8,23 @@
  */
 int main(int argc, char **argv)
 {
-	int i, j, k;
+	int i, j, k, m;
 
 	j = 0;
 	k = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]))
+		for (m = 0; argv[i][m] != '\0'; m++)
 		{
-			j += atoi(argv[i]);
-		}
-		else
-		{
-			k++;
+			if (atoi(argv[i][m]))
+			{
+				j += atoi(argv[i]);
+			}
+			else
+			{
+				k++;
+			}
 		}
 	}
 	if (k > 0)
