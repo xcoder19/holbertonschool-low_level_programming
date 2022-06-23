@@ -11,8 +11,9 @@ int main(int argc, char **argv)
 	int i, j, k;
 
 	j = 0;
+	k = 0;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		if (atoi(argv[i]))
 		{
