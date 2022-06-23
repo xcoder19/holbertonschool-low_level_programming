@@ -8,15 +8,22 @@
  */
 int main(int argc, char **argv)
 {
-	int i, j, k;
-
+	int i, j, k, n, flag;
+	flag = 0;
 	j = 0;
 	k = 0;
 
 	for (i = 1; i < argc; i++)
 	{
+		for (n = 0; argv[i][n] != '\0'; n++)
+		{
+			if (atoi(argv[i][n]) == 0)
+			{
+				flag = 1;
+			}
+		}
 
-		if (atoi(argv[i]))
+		if (atoi(argv[i]) && flag != 1)
 		{
 			j += atoi(argv[i]);
 		}
