@@ -30,11 +30,12 @@ int main(int argc, char **argv)
 	}
 	else if (k > 0)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 	else
 	{
+		printf("%d\n", j);
 		return (j);
 	}
 }
