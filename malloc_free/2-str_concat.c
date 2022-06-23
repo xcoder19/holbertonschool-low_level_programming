@@ -5,7 +5,7 @@ char *str_concat(char *s1, char *s2)
 	char *arr;
 	char *p;
 
-	arr = (char *)malloc(sizeof(char) * strlen(s2));
+	arr = (char *)malloc(sizeof(char) * strlen(s1) + 1);
 	p = arr;
 	while (arr != NULL)
 	{
