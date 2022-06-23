@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 	{
 		for (n = 0; argv[i][n] != '\0'; n++)
 		{
-			if (atoi(argv[i][n]) == 0)
+			if (atoi(&argv[i][n]) == 0)
 			{
 				flag = 1;
 			}
