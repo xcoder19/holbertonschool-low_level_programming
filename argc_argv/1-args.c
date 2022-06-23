@@ -6,10 +6,13 @@
  * @argv: array of values
  * Return: 0
  */
-int main(int argc)
+int main(int argc, char **argv)
 {
-
-	putchar('0' + argc);
-	putchar('\n');
+	if (*argv)
+	{
+		putchar('0' + argc);
+		putchar('\n');
+		return (0);
+	}
 	return (0);
 }
