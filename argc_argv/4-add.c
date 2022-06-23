@@ -26,6 +26,7 @@ int main(int argc, char **argv)
 	}
 	if (j == 0)
 	{
+		printf("%d", 0);
 		return (0);
 	}
 	else if (k > 0)
