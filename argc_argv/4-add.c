@@ -24,16 +24,17 @@ int main(int argc, char **argv)
 			k++;
 		}
 	}
-	if (j == 0)
-	{
-		printf("%d\n", 0);
-		return (0);
-	}
-	else if (k > 0)
+	if (k > 0)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	else if (j == 0)
+	{
+		printf("%d\n", 0);
+		return (0);
+	}
+
 	else
 	{
 		printf("%d\n", j);
