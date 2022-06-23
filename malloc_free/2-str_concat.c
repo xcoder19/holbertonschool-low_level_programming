@@ -13,10 +13,16 @@ char *str_concat(char *s1, char *s2)
 	}
 	arr = (char *)malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
 	p = arr;
-	while (*s1)
+	if (arr != NULL)
 	{
-		*arr++ = *s1++;
+		while (*s1)
+		{
+			*arr++ = *s1++;
+		}
+		while (*s2)
+		{
+			*arr++ = *s2++;
+		}
 	}
-
 	return p;
 }
