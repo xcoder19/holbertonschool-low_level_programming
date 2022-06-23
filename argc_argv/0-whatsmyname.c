@@ -3,7 +3,8 @@
 
 int main(int argc, char **argv)
 {
-	printf("%d", argc);
-	printf("%s", argv[0]);
+
+	printf("%s", argv[argc - 1]);
+	putchar('\n');
 	return (0);
 }
