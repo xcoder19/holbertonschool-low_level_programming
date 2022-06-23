@@ -15,16 +15,14 @@ int main(int argc, char **argv)
 
 	for (i = 1; i < argc; i++)
 	{
-		for (m = 0; argv[i][m] != '\0'; m++)
+
+		if (atoi(argv[i]))
 		{
-			if (atoi(argv[i][m]))
-			{
-				j += atoi(argv[i]);
-			}
-			else
-			{
-				k++;
-			}
+			j += atoi(argv[i]);
+		}
+		else
+		{
+			k++;
 		}
 	}
 	if (k > 0)
