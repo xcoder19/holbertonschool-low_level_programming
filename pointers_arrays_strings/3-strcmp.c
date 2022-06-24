@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * _strcmp - compare  strings
+ * @s1: char pointer
+ * @s2: char pointer
+ * Return: 0 or 13 or -13
+ */
 int _strcmp(char *s1, char *s2)
 {
 	while (*s1 != '\0')
