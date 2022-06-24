@@ -8,11 +8,11 @@ int _strcmp(char *s1, char *s2)
 		{
 			if (*s1 > *s2)
 			{
-				return (1);
+				return (13);
 			}
 			else
 			{
-				return (-1);
+				return (-13);
 			}
 		}
 	}
