@@ -1,7 +1,10 @@
-
-
 #include "main.h"
-
+/**
+ * alloc_grid - making a 2d array
+ * @width: int
+ * @height: int
+ * Return: 2d array
+ */
 int **alloc_grid(int width, int height)
 {
 	int i, j, **p;
@@ -17,10 +20,6 @@ int **alloc_grid(int width, int height)
 		for (i = 0; i < height; i++)
 		{
 			p[i] = (int *)malloc(sizeof(int) * width);
-			for (j = 0; j < width; j++)
-			{
-				p[i][j] = 0;
-			}
 		}
 	}
 
@@ -30,5 +29,5 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	return p;
+	return (p);
 }
