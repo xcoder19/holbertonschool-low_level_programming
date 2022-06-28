@@ -4,7 +4,8 @@
  * string_nconcat - concat string
  * @s1: pointer to char
  * @s2: pointer to char
- * @n: unsigned int
+ * @n: number of bytes to copy
+ * Return: pointer to char
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
