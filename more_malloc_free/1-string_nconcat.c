@@ -29,14 +29,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	if (n >= k)
 	{
-		len = k + m;
+		len = k + m + 2;
 	}
 	else
 	{
-		len = m + n;
+		len = m + n + 1;
 	}
 
-	p = (char *)malloc(len + 1);
+	p = (char *)malloc(len);
 	if (p != NULL)
 	{
 
