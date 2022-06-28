@@ -6,10 +6,13 @@
  * @s2: pointer to char
  * @n: unsigned int
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 
 	char *p;
+
+	int i, j;
 
 	if (s1 == NULL)
 	{
@@ -20,19 +23,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 
-	p = malloc(sizeof(s1) + n - 1);
+	p = (char *)malloc(sizeof(s1) + n);
 	if (p != NULL)
 	{
-		while (*s1 != '\0')
+		printf("%p", p);
+		i = 0;
+		while (s1[i] != '\0')
 		{
-			*p++ = *s1++;
+			p[i] = s1[i];
+			i++;
 		}
-
+		printf("%s", p);
+		j = 0;
 		while (n--)
 		{
-			*p++ = *s2++;
+			p[i] = s2[j];
+			j++;
+			i++;
 		}
-		*p = '\0';
+		p[i] = '\0';
 		return (p);
 	}
 	return (NULL);
