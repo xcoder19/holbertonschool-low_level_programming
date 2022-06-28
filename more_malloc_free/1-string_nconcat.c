@@ -25,14 +25,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n >= (strlen(s2)))
 	{
-		len = strlen(s1) + strlen(s2) + 1;
+		len = strlen(s1) + strlen(s2);
 	}
 	else
 	{
-		len = strlen(s1) + n + 1;
+		len = strlen(s1) + n;
 	}
 
-	p = (char *)malloc(len);
+	p = (char *)malloc(sizeof(char) * len + 1);
 	if (p != NULL)
 	{
 
