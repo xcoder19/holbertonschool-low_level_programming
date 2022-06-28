@@ -26,14 +26,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	p = (char *)malloc(sizeof(s1) + n);
 	if (p != NULL)
 	{
-		printf("%p", p);
+
 		i = 0;
 		while (s1[i] != '\0')
 		{
 			p[i] = s1[i];
 			i++;
 		}
-		printf("%s", p);
+
 		j = 0;
 		while (n--)
 		{
