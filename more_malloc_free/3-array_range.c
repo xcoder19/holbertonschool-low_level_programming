@@ -8,7 +8,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	arr = malloc(max - min);
+	arr = malloc((max - min) * 4);
 
 	if (arr != NULL)
 	{
