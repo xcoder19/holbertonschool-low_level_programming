@@ -24,16 +24,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 
-	if (n >= strlen(s2))
-	{
-		len = strlen(s1) + strlen(s2);
-	}
-	else
-	{
-		len = strlen(s1) + n;
-	}
+	len = sizeof(s1) + n;
 
-	p = malloc(sizeof(char) * (len + 6));
+	p = malloc(len + 3);
 	if (p != NULL)
 	{
 
