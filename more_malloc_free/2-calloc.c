@@ -8,16 +8,15 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	int *arr;
+	void *arr;
 	int i;
 
 	arr = malloc(size * nmemb);
 
 	if (arr != NULL)
 	{
-		i = 0;
 
-		return (arr);
+		return (memset(arr, 0, size * nmemb));
 	}
 	return (NULL);
 }
