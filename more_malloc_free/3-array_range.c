@@ -13,9 +13,10 @@ int *array_range(int min, int max)
 	if (arr != NULL)
 	{
 		i = 0;
-		while (min++ && min <= max)
+		while (min <= max)
 		{
 			arr[i] = min;
+			min++;
 			i++;
 		}
 		return (arr);
