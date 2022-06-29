@@ -8,7 +8,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	void *arr;
+	int *arr;
 	int i;
 
 	arr = malloc(size * nmemb);
