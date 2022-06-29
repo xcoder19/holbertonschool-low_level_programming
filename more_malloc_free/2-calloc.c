@@ -1,6 +1,10 @@
-
-
 #include "main.h"
+/**
+ * _calloc - calloc function
+ * @nmemb: number of elements
+ * @size: size of array
+ * Return: pointer to array
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *arr;
@@ -17,5 +21,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 		return (memset(arr, 0, size * nmemb));
 	}
+
 	return (NULL);
 }
