@@ -7,11 +7,10 @@
  * Return: 0
  */
 
-int main(int argc, char **argv)
+int main(void)
 {
-	if (argc)
-	{
-		printf("%s", argv[0]);
-	}
+
+	printf("%s", __FILE__);
+
 	return (0);
 }
