@@ -5,8 +5,7 @@
  * @name: name
  * @age: age
  * @owner: owner
- * Return: a
- * @return:return a pointer to dynamicly allocated struct
+ * Return: return a pointer to dynamicly allocated struct
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -22,13 +21,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		name = malloc(strlen(name) + 1);
 		owner = malloc(strlen(owner) + 1);
 
-		new_dog->name = n;
-		new_dog->owner = o;
+		strcpy(new_dog->name, n);
+		strcpy(new_dog->owner, o);
 		new_dog->age = age;
-		return new_dog;
+		return (new_dog);
 	}
 	else
 	{
+		free(new_dog);
 		return (NULL);
 	}
 }
