@@ -1,2 +1,2 @@
 #include <stdio.h>
-#define ABS(X) (X<0?printf("%d",-X):printf("%d",X))
+#define ABS( X )  if( X < 0 ) { PRINT(-X); } else { PRINT(X); } 
