@@ -11,7 +11,7 @@ int main(int argc, char *argv)
 {
 	if (argc)
 	{
-		printf("%s", argv[0]);
+		printf("%s", argv[1]);
 	}
 	return (0);
 }
