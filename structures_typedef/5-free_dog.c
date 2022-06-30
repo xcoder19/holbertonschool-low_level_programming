@@ -1,6 +1,9 @@
 
 #include "dog.h"
-
+/**
+ * free_dog - freeing dog struct
+ * @d: dog struct
+ */
 void free_dog(dog_t *d)
 {
 	free(d->owner);
