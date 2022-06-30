@@ -10,7 +10,7 @@
 int main(void)
 {
 
-	int i;
+	long unsigned int i;
 
 	i = 0;
 	while (i < strlen(__FILE__))
