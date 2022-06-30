@@ -11,30 +11,30 @@ char *_strcpy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dogi;
-	char *o, *n;
+	char *o = owner, *n = name;
 	new_dogi = malloc(sizeof(dog_t));
 
 	if (new_dogi != NULL)
 	{
 
-		n = malloc(sizeof(name));
-		if (n == NULL)
+		name = malloc(sizeof(name));
+		if (name == NULL)
 		{
-			free(n);
+			free(name);
 			free(new_dogi);
 			return (NULL);
 		}
-		o = malloc(sizeof(owner));
-		if (o == NULL)
+		owner = malloc(sizeof(owner));
+		if (owner == NULL)
 		{
-			free(n);
-			free(o);
+			free(name);
+			free(owner);
 			free(new_dogi);
 			return (NULL);
 		}
 
-		n = _strcpy(new_dogi->name, name);
-		o = _strcpy(new_dogi->owner, owner);
+		new_dogi->name = n;
+		new_dogi->owner = o;
 		new_dogi->age = age;
 		return (new_dogi);
 	}
