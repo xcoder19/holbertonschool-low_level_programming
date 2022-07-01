@@ -1,7 +1,11 @@
 
 
 #include "3-calc.h"
-
+/**
+ * get_op_func - return the correct func to use
+ * @s: operation
+ * Return: pointer to a function
+ */
 int (*get_op_func(char *s))(int, int)
 {
 
@@ -20,7 +24,7 @@ int (*get_op_func(char *s))(int, int)
 	while (ops[i].op)
 	{
 
-		if (strcmp(s, ops[i].op) == 0)
+		if (!strcmp(s, ops[i].op))
 		{
 			return (ops[i].f);
 		}

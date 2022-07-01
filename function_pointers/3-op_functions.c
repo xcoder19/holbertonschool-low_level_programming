@@ -12,16 +12,16 @@ int op_add(int a, int b) { return a + b; }
  * @b:int
  * Return: result
  */
-int op_sub(int a, int b) { return a - b; }
+int op_sub(int a, int b) { return (a - b); }
 /**
  * op_mul - multiply two ints
  * @a:int
  * @b:int
  * Return: result
  */
-int op_mul(int a, int b) { return a * b; }
+int op_mul(int a, int b) { return (a * b); }
 /**
- * opp_div - divide a by b
+ * op_div - divide a by b
  * @a:int
  * @b:int
  * Return: result
@@ -33,7 +33,7 @@ int op_div(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-	return a / b;
+	return (a / b);
 }
 /**
  * op_mod - mod a by b
@@ -48,5 +48,5 @@ int op_mod(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-	return a % b;
+	return (a % b);
 }

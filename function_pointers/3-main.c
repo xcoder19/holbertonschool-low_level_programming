@@ -1,4 +1,10 @@
 #include "3-calc.h"
+/**
+ * main - execution
+ * @argc: number of agrguments
+ * @argv: array of arguments
+ * Return: result of operation
+ */
 int main(int argc, char *argv[])
 {
 
