@@ -2,7 +2,7 @@
 #include "3-calc.h"
 int main(int argc, char *argv[])
 {
-	int i, j;
+
 	if (argc != 4)
 	{
 		printf("Error\n");
