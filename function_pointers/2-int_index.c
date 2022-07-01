@@ -5,6 +5,7 @@
  * @array: array of int
  * @size: size of array
  * @cmp: pointer to a function
+ * Return: first index of found int
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -20,7 +21,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		if ((*cmp)(array[i]))
 		{
-			return i;
+			return (i);
 		}
 		i++;
 		size--;
