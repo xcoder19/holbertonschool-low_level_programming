@@ -6,7 +6,7 @@
 void print_all(const char *const format, ...)
 {
 	char *str, c;
-	int k;
+	int k, m;
 	float j;
 
 	unsigned long i = 0;
@@ -17,6 +17,7 @@ void print_all(const char *const format, ...)
 
 	while (i < strlen(format))
 	{
+		k = 1;
 		switch (format[i])
 		{
 
@@ -47,10 +48,11 @@ void print_all(const char *const format, ...)
 			break;
 
 		default:
+			k = 0;
 			break;
 		}
 
-		if (i < strlen(format) - 1)
+		if (i < strlen(format) - 1 && k)
 		{
 			putchar(',');
 			putchar(' ');
