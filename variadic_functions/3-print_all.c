@@ -48,11 +48,11 @@ void print_all(const char *const format, ...)
 			break;
 
 		default:
-			k = 0;
+			m = 0;
 			break;
 		}
 
-		if (i < strlen(format) - 1 && k)
+		if (i < strlen(format) - 1 && m)
 		{
 			putchar(',');
 			putchar(' ');
