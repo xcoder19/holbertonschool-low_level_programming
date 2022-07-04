@@ -1,5 +1,9 @@
 #include "variadic_functions.h"
-
+/**
+ * print_numbers - print all int args
+ * @separator: separator
+ * @n: number of params
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
