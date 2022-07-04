@@ -61,10 +61,10 @@ void print_all(const char *const format, ...)
 	float j;
 	unsigned long i = 0;
 	va_list ap;
-
-	while (i < strlen(format) && format != NULL)
+	va_start(ap, format);
+	while (i < strlen(format) && format != NULL && ap != NULL)
 	{
-		va_start(ap, format);
+
 		m = 1;
 		switch (format[i])
 		{
