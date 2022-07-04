@@ -11,7 +11,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (separator != NULL)
 		{
 
-			printf("%s%s", separator, va_arg(ap, char *));
+			printf("%s", va_arg(ap, char *));
+			if (i < n - 1)
+			{
+				printf("%s", separator);
+			}
 		}
 		else
 		{
