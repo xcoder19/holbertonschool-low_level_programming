@@ -47,7 +47,9 @@ void print_all(const char *const format, ...)
 			putchar(',');
 			putchar(' ');
 		}
+
 		i++;
 	}
+	putchar('\n');
 	va_end(ap);
 }
