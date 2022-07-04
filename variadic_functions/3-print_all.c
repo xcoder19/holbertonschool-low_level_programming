@@ -45,6 +45,7 @@ void print_all(const char *const format, ...)
 		if (i < strlen(format) - 1)
 		{
 			putchar(',');
+			putchar(' ');
 		}
 		i++;
 	}
