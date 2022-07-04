@@ -61,39 +61,38 @@ void print_all(const char *const format, ...)
 	float j;
 	unsigned long i = 0;
 	va_list ap;
-	if (format != NULL)
+
+	va_start(ap, format);
+	while (i < strlen(format) && format != NULL)
 	{
-		va_start(ap, format);
-		while (i < strlen(format) && format != NULL)
+		m = 1;
+		switch (format[i])
 		{
-			m = 1;
-			switch (format[i])
-			{
-			case 'c':
-				print_char(&ap);
-				break;
-			case 'f':
-				j = va_arg(ap, double);
-				printf("%f", j);
-				break;
-			case 's':
-				print_str(&ap);
-				break;
-			case 'i':
-				print_int(&ap);
-				break;
-			default:
-				m = 0;
-				break;
-			}
-			if (i < strlen(format) - 1 && m)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			i++;
+		case 'c':
+			print_char(&ap);
+			break;
+		case 'f':
+			j = va_arg(ap, double);
+			printf("%f", j);
+			break;
+		case 's':
+			print_str(&ap);
+			break;
+		case 'i':
+			print_int(&ap);
+			break;
+		default:
+			m = 0;
+			break;
 		}
+		if (i < strlen(format) - 1 && m)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		i++;
 	}
+
 	putchar('\n');
 	va_end(ap);
 }
