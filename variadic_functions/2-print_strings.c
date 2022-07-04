@@ -10,25 +10,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		if (separator != NULL)
 		{
-			if (va_arg(ap, char *) == NULL)
-			{
-				printf("%s%s", "(nil)", separator);
-			}
-			else
-			{
-				printf("%s%s", va_arg(ap, char *), separator);
-			}
+
+			printf("%s%s", va_arg(ap, char *), separator);
 		}
 		else
 		{
-			if (va_arg(ap, char *) == NULL)
-			{
-				printf("%s%s", "(nil)", separator);
-			}
-			else
-			{
-				printf("%s", va_arg(ap, char *));
-			}
+
+			printf("%s", va_arg(ap, char *));
 		}
 	}
 	va_end(ap);
