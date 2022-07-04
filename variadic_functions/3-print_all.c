@@ -17,28 +17,32 @@ void print_all(const char *const format, ...)
 
 	while (i < strlen(format))
 	{
-
-		if (format[i] == 'c')
+		switch (format[i])
 		{
+		case 'c':
 			c = va_arg(ap, int);
 
 			printf("%c\n", c);
-		}
-		else if (format[i] == 'f')
-		{
+
+			break;
+		case 'f':
 			j = va_arg(ap, double);
 			printf("%f\n", j);
-		}
-		else if (format[i] == 's')
-		{
+			break;
+		case 's':
 			str = va_arg(ap, char *);
 			printf("%s\n", str);
-		}
-		else if (format[i] == 'i')
-		{
+			break;
+
+		case 'i':
 			k = va_arg(ap, int);
 			printf("%d\n", k);
+			break;
+
+		default:
+			break;
 		}
+
 		i++;
 	}
 	va_end(ap);
