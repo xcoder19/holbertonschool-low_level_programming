@@ -22,27 +22,30 @@ void print_all(const char *const format, ...)
 		case 'c':
 			c = va_arg(ap, int);
 
-			printf("%c\n", c);
+			printf("%c", c);
 
 			break;
 		case 'f':
 			j = va_arg(ap, double);
-			printf("%f\n", j);
+			printf("%f", j);
 			break;
 		case 's':
 			str = va_arg(ap, char *);
-			printf("%s\n", str);
+			printf("%s", str);
 			break;
 
 		case 'i':
 			k = va_arg(ap, int);
-			printf("%d\n", k);
+			printf("%d", k);
 			break;
 
 		default:
 			break;
 		}
-
+		if (i < strlen(format) - 1)
+		{
+			putchar(',');
+		}
 		i++;
 	}
 	va_end(ap);
