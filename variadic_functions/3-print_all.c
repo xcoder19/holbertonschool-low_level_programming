@@ -62,7 +62,7 @@ void print_all(const char *const format, ...)
 	unsigned long i = 0;
 	va_list ap;
 
-		while (i < strlen(format) && format != NULL)
+	while (i < strlen(format) && format != NULL)
 	{
 		va_start(ap, format);
 		m = 1;
