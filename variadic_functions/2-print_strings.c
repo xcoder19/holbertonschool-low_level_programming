@@ -19,5 +19,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", va_arg(ap, char *));
 		}
 	}
+	putchar('\n');
 	va_end(ap);
 }
