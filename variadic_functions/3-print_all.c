@@ -12,13 +12,6 @@ void print_all(const char *const format, ...)
 	unsigned long i = 0;
 
 	va_list ap;
-	switch (format)
-	{
-	case (NULL):
-		putchar('\n');
-		return;
-		break;
-	}
 
 	va_start(ap, format);
 
@@ -57,6 +50,7 @@ void print_all(const char *const format, ...)
 		default:
 			break;
 		}
+
 		if (i < strlen(format) - 1)
 		{
 			putchar(',');
