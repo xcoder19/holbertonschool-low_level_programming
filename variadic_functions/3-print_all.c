@@ -12,11 +12,14 @@ void print_all(const char *const format, ...)
 	unsigned long i = 0;
 
 	va_list ap;
-	if (format == NULL)
+	switch (format)
 	{
+	case (NULL):
 		putchar('\n');
 		return;
+		break;
 	}
+
 	va_start(ap, format);
 
 	while (i < strlen(format))
