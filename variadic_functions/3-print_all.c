@@ -36,12 +36,11 @@ void print_all(const char *const format, ...)
 			if (str != NULL)
 			{
 				printf("%s", str);
+				break;
 			}
 
 			printf("%s", "(nil)");
-
 			break;
-
 		case 'i':
 			k = va_arg(ap, int);
 			printf("%d", k);
