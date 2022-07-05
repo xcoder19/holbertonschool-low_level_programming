@@ -1,15 +1,15 @@
-section .data 
-    text db "Hello, world!", 10 
+    	SECTION .data 
+    msg: db "Hello World", 10 
      
-section .text 
-global _start 
-_start: 
-    mov rax, 1 
-    mov rdi, 1 
-    mov rsi, text 
-    mov rdx, 14 
-    syscall 
+    	SECTION .text 
+    	global main 
+    main: 
+    	mov edx, 12 
+    	mov ecx, msg 
+    	mov ebx, 1 
+    	mov eax, 4 
+    	int 0x80 
      
-    mov rax, 60 
-    mov rdi, 0 
-    syscall 
+    	mov ebx, 0 
+    	mov eax, 1 
+    	int 0x80 
