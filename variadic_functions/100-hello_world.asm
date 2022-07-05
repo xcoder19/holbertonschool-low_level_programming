@@ -1,10 +1,10 @@
 SECTION .data
-    msg: db "Hello, World",13
+    msg: db "Hello, World"
 SECTION .text 
 global main 
 main: 
     mov edx, 12 
-    mov ecx, msg 
+    mov ecx, msg,10
     mov ebx, 1 
     mov eax, 4 
     int 0x80 
