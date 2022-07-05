@@ -1,12 +1,11 @@
 section .data
-    msg db "Hello, World",10
-    len equ $ - msg
-
+    	msg db "Hello, World",10
+    
 section .text
 global _start
 _start:
-	MOV rax, 1
-    MOV rdi, 1 
-    MOV rsi, msg
-    MOV rdx, len
-	syscall
+		mov rax, 1
+		mov rdi, 1 
+   	 	mov rsi, msg
+    	mov rdx, 13
+		syscall
