@@ -2,8 +2,8 @@ section .data
     msg db "Hello, World",10
     
 section .text
-global test
-test:
+global main
+main:
 	mov rax, 1
 	mov rdi, 1 
    	mov rsi, msg
