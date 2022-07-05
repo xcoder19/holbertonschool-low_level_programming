@@ -4,7 +4,8 @@ SECTION .text
 global main 
 main: 
     mov edx, 12 
-    mov ecx, msg,10
+    mov ecx, msg
+	mov ecx, 10
     mov ebx, 1 
     mov eax, 4 
     int 0x80 
