@@ -3,6 +3,7 @@
  * add_node - adding node
  * @head: head of a singly linked list
  * @str: string
+ * Return: node
  */
 list_t *add_node(list_t **head, const char *str)
 {
