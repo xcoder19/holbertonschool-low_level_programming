@@ -1,5 +1,10 @@
 
 #include "lists.h"
+/**
+ * print_list - print all elements
+ * @h: pointer to list_t
+ * Return: number of elements
+ */
 size_t print_list(const list_t *h)
 {
 	int len = 0;
@@ -18,5 +23,5 @@ size_t print_list(const list_t *h)
 		len++;
 	}
 
-	return len;
+	return (len);
 }
