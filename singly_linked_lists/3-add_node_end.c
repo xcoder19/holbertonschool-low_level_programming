@@ -9,8 +9,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		node->str = strdup(str);
 		node->len = _strlen(str);
-		node->next = *head;
 		*head = node;
+		node->next = *head;
+
 		return (*head);
 	}
 
