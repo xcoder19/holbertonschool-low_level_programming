@@ -16,3 +16,18 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	return (NULL);
 }
+
+/**
+ * _strlen - count length of string
+ * @s: pointer to string
+ * Return: count
+ */
+int _strlen(const char *s)
+{
+	int i;
+
+	for (i = 0; *(s + i) != '\0'; ++i)
+		;
+
+	return (i);
+}
