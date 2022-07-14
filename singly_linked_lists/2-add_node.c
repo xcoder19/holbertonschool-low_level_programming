@@ -1,5 +1,9 @@
 #include "lists.h"
-
+/**
+ * add_node - adding node
+ * @head: head of a singly linked list
+ * @str: string
+ */
 list_t *add_node(list_t **head, const char *str)
 {
 
@@ -12,11 +16,16 @@ list_t *add_node(list_t **head, const char *str)
 		node->len = _strlen(str);
 		node->next = *head;
 		*head = node;
-		return *head;
+		return (*head);
 	}
 
-	return NULL;
+	return (NULL);
 }
+/**
+ * _strlen - count length of string
+ * @s: pointer to string
+ * Return: count
+ */
 int _strlen(const char *s)
 {
 	int i;
