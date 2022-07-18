@@ -5,10 +5,10 @@ void free_listint2(listint_t **head)
 
 	tmp = *head;
 
-	while (tmp->next != NULL)
+	while (*head != NULL)
 	{
-		free(tmp);
-		tmp = tmp->next;
+		free(*head);
+		*head = tmp->next;
 	}
 	free(*head);
 }
