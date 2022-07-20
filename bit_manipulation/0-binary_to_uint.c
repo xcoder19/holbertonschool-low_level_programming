@@ -7,24 +7,27 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i, dec = 0, temp, m = _strlen(b) - 1;
+	int i = 0, dec = 0, temp, m;
 
-	i = 0;
-
-	while ((m - i) != -1)
+	if (b != NULL)
 	{
-
-		if (b[m - i] != 48 && b[m - i] != 49)
+		m = _strlen(b) - 1;
+		while ((m - i) != -1)
 		{
-			return 0;
+
+			if (b[m - i] != 48 && b[m - i] != 49)
+			{
+				return (0);
+			}
+
+			temp = b[m - i] - '0';
+
+			dec = dec + (temp * _pow_recursion(2, i));
+			i++;
 		}
-
-		temp = b[m - i] - '0';
-
-		dec = dec + (temp * _pow_recursion(2, i));
-		i++;
+		return (dec);
 	}
-	return dec;
+	return (0);
 }
 /**
  *_pow_recursion - power
