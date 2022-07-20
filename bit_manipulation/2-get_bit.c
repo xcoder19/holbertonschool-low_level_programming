@@ -9,7 +9,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		printf("0");
 		return 0;
 	}
-	for (i = 63; i >= 0; i--)
+	for (i = 64; i > 0; i--)
 	{
 		k = n >> i;
 		if (k & 1)
