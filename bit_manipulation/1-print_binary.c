@@ -1,5 +1,6 @@
 #include "main.h"
-/** printf_binary - convert decimal to binary
+/**
+ * printf_binary - convert decimal to binary
  * @n: decimal
  */
 void print_binary(unsigned long int n)
