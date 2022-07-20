@@ -1,5 +1,4 @@
 #include "main.h"
-ssize_t read_textfile(const char *filename, size_t letters)
 /**
  * read_textfile - read content of a file and outputs it
  * @filename: path of file
@@ -7,6 +6,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
  * Return: number of letters printed
  */
 
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int n;
 	size_t k;
