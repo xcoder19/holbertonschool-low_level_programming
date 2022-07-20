@@ -1,7 +1,7 @@
 #include "main.h"
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int i, bt = 0;
+	unsigned int i, m, bt = 0;
 
 	unsigned long k;
 	if (n == 0)
@@ -9,7 +9,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		printf("0");
 		return 0;
 	}
-	for (i = 64; i != 0; i--)
+	for (i = 64; i >= 0; i--)
 	{
 		k = n >> i;
 		if (k & 1)
@@ -20,8 +20,8 @@ int get_bit(unsigned long int n, unsigned int index)
 		{
 			bt = 0;
 		}
-
-		if (i == index)
+		m = i;
+		if (m == index)
 		{
 			return bt;
 		}
