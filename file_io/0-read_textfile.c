@@ -3,7 +3,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 {
 	int n;
-	char buffer[letters];
+	char *buffer[letters];
 	n = open(filename, O_RDWR);
 	if (n != -1)
 	{
