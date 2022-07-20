@@ -9,7 +9,7 @@ void print_binary(unsigned long int n)
 		printf("0");
 		return;
 	}
-	for (i = 64; i >= 0; i--)
+	for (i = 32; i >= 0; i--)
 	{
 		k = n >> i;
 		if (k & 1)
