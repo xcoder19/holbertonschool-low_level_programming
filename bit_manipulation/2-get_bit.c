@@ -1,8 +1,8 @@
 #include "main.h"
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int i, m, bt = 0;
-
+	unsigned int m, bt = 0;
+	int i;
 	unsigned long k;
 	if (n == 0)
 	{
