@@ -14,11 +14,10 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	n = open(filename, O_RDONLY);
-	close(n);
-	if (n == -1)
+	n = open(filename, O_RDWR | O_CREAT | O_TRUNC, 600);
+	if (n != -1)
 	{
-		n = open(filename, O_CREAT, 600);
+
 		if (text_content == NULL)
 		{
 			write(n, "", 0);
@@ -26,9 +25,9 @@ int create_file(const char *filename, char *text_content)
 			return (1);
 		}
 		write(n, text_content, strlen(text_content));
-		close(n);
+
 		return (1);
 	}
-
+	close(n);
 	return (-1);
 }
