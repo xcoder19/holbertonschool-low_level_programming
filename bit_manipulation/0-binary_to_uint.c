@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 
 	i = 0;
 
-	while (b[m - i] != '\0')
+	while (*(b + (m - i)) != '\0')
 	{
 
 		if (b[m - i] != 48 && b[m - i] != 49)
