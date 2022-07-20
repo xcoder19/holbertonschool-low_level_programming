@@ -3,7 +3,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 {
 	int n;
-	char *buffer[letters];
+	char *buffer;
+	buffer = malloc(letters * sizeof(char));
 	n = open(filename, O_RDWR);
 	if (n != -1)
 	{
