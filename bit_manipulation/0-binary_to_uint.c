@@ -7,11 +7,11 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i, dec = 0, temp, m = _strlen(b) - 1;
+	int i, dec = 0, temp, m = _strlen(b) - 1;
 
 	i = 0;
 
-	while (*(b + (m - i)) != '\0')
+	while ((m - i) != -1)
 	{
 
 		if (b[m - i] != 48 && b[m - i] != 49)
@@ -26,7 +26,6 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return dec;
 }
-
 /**
  *_pow_recursion - power
  * @x: int
