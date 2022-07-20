@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		k = read(n, buffer, letters);
 
-		write(1, buffer, k);
+		write(1, buffer, k - 1);
 		close(n);
 	}
 	return letters;
