@@ -41,13 +41,12 @@ int main(int argc, char *argv[])
 	k = close(fd2);
 	if (n == -1 || k == -1)
 	{
-		err = "Error: Can't close fd FD_VALUE ";
+		err = "Error: Can't close fd ";
 		write(STDERR_FILENO, err, strlen(err));
 		write(STDERR_FILENO, "-1", strlen("-1"));
 		write(STDERR_FILENO, "\n", 1);
-		exit(100);
-
 		free(err);
+		exit(100);
 	}
 
 	free(err);
