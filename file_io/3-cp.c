@@ -55,6 +55,7 @@ int main(int argc, char *argv[])
 	}
 	n = close(fd);
 	k = close(fd2);
+	free(buffer);
 	if (n == -1 || k == -1)
 		throwerr("Error: Can't close fd -1", NULL, 100);
 
