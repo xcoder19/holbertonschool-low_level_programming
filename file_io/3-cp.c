@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
 		write(STDERR_FILENO, err, strlen(err));
 		write(STDERR_FILENO, argv[1], strlen(argv[1]));
 		write(STDERR_FILENO, "\n", 1);
-		free(err);
 		exit(98);
 	}
 	if (fd == -1)
