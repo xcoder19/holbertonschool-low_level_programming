@@ -3,7 +3,7 @@
  * throwerr - throw an error
  * @err: error message
  * @filename: filename
- * errcode: error code
+ * @errcode: error code
  */
 
 void throwerr(char *err, char *filename, int errcode)
