@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	{
 		write(fd, buffer, 1024);
 		fd3 = read(fd2, buffer, 1024);
-		if (fd3 > 0)
+		if (fd3 < 0)
 			break;
 	}
 
