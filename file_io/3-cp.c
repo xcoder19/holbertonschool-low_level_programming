@@ -42,17 +42,18 @@ int main(int argc, char *argv[])
 	while (fd3 > 0)
 	{
 		fd4 = write(fd, buffer, fd3);
-		if (fd4 < 0)
-		{
-			err = "Error: Can't write to ";
-			write(STDERR_FILENO, err, strlen(err));
-			write(STDERR_FILENO, argv[2], strlen(argv[2]));
-			write(STDERR_FILENO, "\n", 1);
-			exit(99);
-		}
+
 		fd3 = read(fd2, buffer, 1024);
 		if (fd3 < 0)
 			break;
+	}
+	if (fd4 < 0)
+	{
+		err = "Error: Can't write to ";
+		write(STDERR_FILENO, err, strlen(err));
+		write(STDERR_FILENO, argv[2], strlen(argv[2]));
+		write(STDERR_FILENO, "\n", 1);
+		exit(99);
 	}
 	n = close(fd);
 	k = close(fd2);
