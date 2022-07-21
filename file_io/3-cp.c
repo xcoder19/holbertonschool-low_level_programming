@@ -45,8 +45,9 @@ int main(int argc, char *argv[])
 		write(STDERR_FILENO, err, strlen(err));
 		write(STDERR_FILENO, "-1", strlen("-1"));
 		write(STDERR_FILENO, "\n", 1);
+		exit(100);
+
 		free(err);
-		exit(99);
 	}
 
 	free(err);
