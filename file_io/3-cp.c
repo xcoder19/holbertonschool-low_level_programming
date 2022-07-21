@@ -36,11 +36,11 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	fd3 = read(fd2, buffer, 1024);
-	while (fd3 > 3)
+	while (fd3 > 0)
 	{
 		write(fd, buffer, 1024);
 		fd3 = read(fd2, buffer, 1024);
-		if (!fd3)
+		if (fd3 > 0)
 			break;
 	}
 
