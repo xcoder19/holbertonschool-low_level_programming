@@ -1,7 +1,7 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
-	int fd, fd2, fd3, n, k, fd4;
+	int fd, fd2, fd3, n, k;
 	char *err, *buffer;
 
 	err = malloc(32);
@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 		write(STDERR_FILENO, "\n", 1);
 		exit(97);
 	}
-	fd = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 00664);
+	fd = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 00664);
 	fd2 = open(argv[1], O_RDONLY);
 	if (fd2 == -1)
 	{
@@ -34,11 +34,8 @@ int main(int argc, char *argv[])
 
 	while (fd3 > 0)
 	{
-		fd4 = write(fd, buffer, fd3);
-		if (fd4 == -1)
-		{
-			return 0;
-		}
+		write(fd, buffer, fd3);
+
 		fd3 = read(fd2, buffer, 1024);
 		if (fd3 < 0)
 			break;
