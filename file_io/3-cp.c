@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		exit(98);
 		err = "Error: Can't read from file ";
 		write(STDERR_FILENO, err, strlen(err));
-		write(STDERR_FILENO, argv[1], strlen(*argv[1]));
+		write(STDERR_FILENO, argv[1], strlen(argv[1]));
 		write(STDERR_FILENO, "\n", 1);
 		free(err);
 	}
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(99);
 		err = "Error: Can't write to ";
 		write(STDERR_FILENO, err, strlen(err));
-		write(STDERR_FILENO, argv[2], strlen(*argv[2]));
+		write(STDERR_FILENO, argv[2], strlen(argv[2]));
 		write(STDERR_FILENO, "\n", 1);
 		free(err);
 	}
