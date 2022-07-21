@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 		{
 			err = "Error: Can't write to ";
 
-			dprintf(2, "%s%s", err, argv[2]);
+			dprintf(2, "%s%s\n", err, argv[2]);
 
 			exit(99);
 		}
