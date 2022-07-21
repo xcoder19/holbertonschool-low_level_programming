@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 	buffer = malloc(1024);
 	if (argc != 3)
 	{
-
+		write(STDERR_FILENO, "Usage: cp file_from file_to", strlen("Usage: cp file_from file_to"));
 		write(STDERR_FILENO, "\n", 1);
 		exit(97);
 	}
