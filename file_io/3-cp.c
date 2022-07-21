@@ -1,4 +1,11 @@
 #include "main.h"
+/**
+ * throwerr - throw an error
+ * @err: error message
+ * @filename: filename
+ * errcode: error code
+ */
+
 void throwerr(char *err, char *filename, int errcode)
 {
 	if (filename == NULL)
@@ -9,6 +16,12 @@ void throwerr(char *err, char *filename, int errcode)
 	dprintf(STDERR_FILENO, "%s%s\n", err, filename);
 	exit(errcode);
 }
+/**
+ * main - cp content of file to another file
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: 0 on success
+ */
 int main(int argc, char *argv[])
 {
 	int fd, fd2, fd3, n, k, fd4;
