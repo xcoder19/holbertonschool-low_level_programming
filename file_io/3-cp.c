@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		free(err);
 	}
 	read(fd2, buffer, 1024);
-	dprintf(fd, buffer);
+	dprintf(fd, "%s", buffer);
 	n = close(fd);
 	k = close(fd2);
 	if (n == -1 || k == -1)
@@ -47,4 +47,5 @@ int main(int argc, char *argv[])
 	}
 
 	free(err);
+	return (0);
 }
