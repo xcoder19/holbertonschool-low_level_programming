@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 		exit(97);
 		write(STDERR_FILENO, "\n", 1);
 	}
-	fd = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 664);
+	fd = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 00664);
 	fd2 = open(argv[1], O_RDONLY);
 
 	if (fd2 == -1)
