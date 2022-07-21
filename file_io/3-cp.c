@@ -39,6 +39,8 @@ int main(int argc, char *argv[])
 	while (fd3)
 	{
 		fd3 = read(fd2, buffer, 1024);
+		if (!fd3)
+			break;
 		write(fd, buffer, 1024);
 	}
 
