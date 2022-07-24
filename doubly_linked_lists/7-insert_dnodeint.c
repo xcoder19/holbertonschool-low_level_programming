@@ -1,10 +1,10 @@
 #include "lists.h"
 /**
- * dlistint_len - return length of linked list
+ * len_list - return length of linked list
  * @h: pointer to doubly linked list
  * Return: length
  */
-int dlistint_len(const dlistint_t *h)
+int len_list(const dlistint_t *h)
 {
 	int len = 0;
 
@@ -26,7 +26,7 @@ int dlistint_len(const dlistint_t *h)
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *p = *h;
-	int len = dlistint_len(*h);
+	int len = len_list(*h);
 	int tmp = 0;
 	dlistint_t *node;
 	node = malloc(sizeof(dlistint_t));
