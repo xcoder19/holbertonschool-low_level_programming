@@ -1,5 +1,22 @@
 #include "lists.h"
 /**
+ * dlistint_len - return length of linked list
+ * @h: pointer to doubly linked list
+ * Return: length
+ */
+int dlistint_len(const dlistint_t *h)
+{
+	int len = 0;
+
+	while (h != NULL)
+	{
+		h = h->next;
+		len++;
+	}
+	return (len);
+}
+
+/**
  * insert_dnodeint_at_index - insert node at index
  * @h: pointer to dlistint_t pointer
  * @idx: index
@@ -9,38 +26,36 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *p = *h;
+	int len = dlistint_len(*h);
+	int tmp = 0;
 	dlistint_t *node;
-
 	node = malloc(sizeof(dlistint_t));
 	if (node == NULL)
-		return (NULL);
+		return NULL;
+
 	node->n = n;
+	node->prev = NULL;
+	node->next = NULL;
 
 	if (idx == 0)
 		return (add_dnodeint(h, n));
 
-	while (p->next != NULL)
+	if (len == idx)
+		return (add_dnodeint_end(h, n));
+
+	while (p != NULL)
 	{
-		if (idx == 0)
+		if (tmp == idx)
 		{
+			node->next = p;
 			node->prev = p->prev;
 			p->prev->next = node;
 			p->prev = node;
-			node->next = p;
-			return (node);
+			break;
 		}
+
 		p = p->next;
-		idx--;
-	}
-	if (idx > 0 && idx != 1)
-		return (NULL);
-	if (p->next == NULL && idx == 0)
-	{
-		node->next = p;
-		node->prev = p->prev;
-		p->prev->next = node;
-		p->prev = node;
-		return (node);
+		tmp++;
 	}
 	return (node);
 }
