@@ -4,9 +4,9 @@
  * @h: pointer to doubly linked list
  * Return: length
  */
-int len_list(const dlistint_t *h)
+unsigned int len_list(const dlistint_t *h)
 {
-	int len = 0;
+	unsigned int len = 0;
 
 	while (h != NULL)
 	{
@@ -26,7 +26,7 @@ int len_list(const dlistint_t *h)
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *p = *h;
-	int len = len_list(*h);
+	unsigned int len = len_list(*h);
 	int tmp = 0;
 	dlistint_t *node;
 	node = malloc(sizeof(dlistint_t));
