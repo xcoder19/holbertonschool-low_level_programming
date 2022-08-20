@@ -4,9 +4,10 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
+	hash_node_t *p;
 	unsigned long pos = hash_djb2((unsigned char *)key);
 	index = pos % ht->size;
-	hash_node_t *p;
+
 	hash_node_t *node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
 		return (0);
