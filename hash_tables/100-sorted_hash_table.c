@@ -1,4 +1,4 @@
-#include "hash_tables.h"
+#include "main.h"
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	shash_table_t *table;
