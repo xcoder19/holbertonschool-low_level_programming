@@ -2,7 +2,7 @@
 
 #include "hash_tables.h"
 /**
- * hash_table_get -
+ * hash_table_get - gets the value of a given key
  * @ht: hashtable
  * @key: key
  * Return: value
@@ -13,7 +13,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	hash_node_t *p;
 
 	if (ht == NULL)
-		return NULL;
+		return (NULL);
 
 	index = key_index((unsigned char *)key, ht->size);
 	p = ht->array[index];
@@ -25,7 +25,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		if (strcmp(p->key, key) == 0)
 		{
-			return p->value;
+			return (p->value);
 		}
 		p = p->next;
 	}
