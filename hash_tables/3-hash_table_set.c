@@ -5,6 +5,7 @@
  * hash_table_set - adds an element to the hash table.
  * @key:key
  * @value:value
+ * @ht: hash table
  * Return: 1 on success
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -13,7 +14,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *p;
 	hash_node_t *node;
 	unsigned long pos = hash_djb2((unsigned char *)key);
-	if (key == NULL)
+
+	if (ht == NULL)
 		return (0);
 	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
