@@ -1,13 +1,25 @@
 
 
 #include "hash_tables.h"
+/**
+ * hash_table_get -
+ * @ht: hashtable
+ * @key: key
+ * Return: value
+ */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int index = key_index((unsigned char *)key, ht->size);
-	hash_node_t *p = ht->array[index];
+	unsigned long int index;
+	hash_node_t *p;
 
-	if (ht == NULL || p == NULL)
+	if (ht == NULL)
 		return NULL;
+
+	index = key_index((unsigned char *)key, ht->size);
+	p = ht->array[index];
+
+	if (p == NULL)
+		return (NULL);
 
 	while (p != NULL)
 	{
@@ -17,5 +29,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		}
 		p = p->next;
 	}
-	return NULL;
+	return (NULL);
 }
