@@ -4,7 +4,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	unsigned long pos = hash_djb2(key);
+	unsigned long pos = hash_djb2((unsigned char *)key);
 	index = pos % ht->size;
 
 	hash_node_t *node = malloc(sizeof(hash_node_t));
